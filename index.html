@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>piwterm</title>
+  <link rel="stylesheet" href="/xterm.css">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background: #000000;
+      overflow: hidden;
+    }
+    #terminal-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    #terminal-container .xterm {
+      height: 100%;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div id="terminal-container"></div>
+  <script src="/xterm.js"></script>
+  <script src="/terminal.js"></script>
+</body>
+</html>
